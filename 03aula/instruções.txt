@@ -1,0 +1,23 @@
+
+Revisar o que vimos. 
+Entender diferença entre var, let e const
+Usar interatividade com o usuário com alert, prompt etc
+Fazer operações básicas com + - * / e %
+
+Ler:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types
+
+Ler em https://javascript.info/ todas essas partes:
+
+An introduction
+An Introduction to JavaScript
+Manuals and specifications
+Code editors
+Developer console
+
+Ler também https://javascript.info/
+2.1 a 2.6
+
+https://developmenttests.ungeeksi.net/htmlBlocks/codesDayByDayJS.html
+Faça um novo arquivo js, linque na mesma pagina e faça os códigos de 4 a 9
+

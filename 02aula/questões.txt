@@ -1,0 +1,6 @@
+1. o que é Javascript?
+2. quem criou o JS?
+3. Em que ano o JS foi criado?
+4. Qual o outro nome do JS?
+5. Monte uma página web simples, e um arquivo .js a parte que mostre 5 mensagens diferentes de uma linha
+

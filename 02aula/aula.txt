@@ -1,4 +1,4 @@
-Criar a mesma aula 01 e mudqar as mensagens com poemas de uma frase
+Criar a mesma aula 01 e mudar as mensagens com poemas de uma frase
  ler https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction
  https://javascript.info/intro
  fazer códigos 01 02 e 03 digitando no index.js https://developmenttests.ungeeksi.net/htmlBlocks/codesDayByDayJS.html
