@@ -1,6 +1,10 @@
 1. o que é Javascript?
+JavaScript é uma linguagem de script onde tornamos as páginas da web interativas, ou seja, podemos criar animações complexas, boões clicáveis, menus pop-up etc.
 2. quem criou o JS?
+Brendan Eich
 3. Em que ano o JS foi criado?
+1995
 4. Qual o outro nome do JS?
+Livescript
 5. Monte uma página web simples, e um arquivo .js a parte que mostre 5 mensagens diferentes de uma linha
 
