@@ -173,7 +173,14 @@ Peço desculpas pelo equívoco. Aqui está a lista novamente com os exemplos num
 
 9.  Tipos de dados em JavaScript:
 
-`let numero = 10; // número inteiro let decimal = 3.14; // número decimal let texto = "Olá"; // string de texto let booleano = true; // valor booleano let array = [1, 2, 3]; // array let objeto = { nome: "João", idade: 25 }; // objeto`
+```js
+let numero = 10; // número inteiro
+let decimal = 3.14;// número decimal
+let texto = "Olá"; // string de texto
+let booleano = true; // valor booleano
+let array = [1, 2, 3]; // array
+let objeto = { nome: "João", idade: 25 }; // objeto
+```
 
 Espero que isso ajude! Novamente, desculpe pela confusão anterior.
 
