@@ -207,7 +207,9 @@ Claro! Aqui estão os exemplos continuando a partir do ponto anterior:
 
 15.  Date objects em JavaScript:
 
-`let dataAtual = new Date(); console.log(dataAtual); // Saída: [data e horário atuais]`
+```js
+let dataAtual = new Date(); console.log(dataAtual); // Saída: [data e horário atuais]
+```
 
 16.  Operadores em JavaScript:
 
