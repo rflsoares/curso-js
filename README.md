@@ -115,102 +115,91 @@ Certamente! Vou fornecer um exemplo básico de código para cada item da lista a
 
 6.  Sintaxe do JavaScript:
 
-`// Exemplo de sintaxe básica: let nome = "John"; console.log("Olá, " + nome);`
+```js
+// Exemplo de sintaxe básica: 
+let nome = "John";
+console.log("Olá, " + nome);
+```
 
 7.  Comentários em JavaScript:
 
-`// Este é um comentário de uma linha em JavaScript  /*    Este é um exemplo de    comentário de várias linhas em JavaScript */`
+```js
+// Este é um comentário de uma linha em JavaScript
+/*    Este é um exemplo de
+comentário de várias linhas em JavaScript
+*/
+```
 
 8.  Variáveis em JavaScript:
 
-`let idade = 25; let altura = 1.75; let nome = "João";`
-
-9.  Tipos de dados em JavaScript:
-
-`let numero = 10; // número inteiro let decimal = 3.14; // número decimal let texto = "Olá"; // string de texto let booleano = true; // valor booleano let array = [1, 2, 3]; // array let objeto = { nome: "João", idade: 25 }; // objeto`
-
-Esses são apenas exemplos básicos para ilustrar os conceitos. Cada t
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Tá ficando tudo como 1., coloque sequencial por favor
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Peço desculpas pelo equívoco. Aqui está a lista novamente com os exemplos numerados sequencialmente:
-
-1.  Introdução ao JavaScript:
-
-`console.log("Olá, mundo em JavaScript!");`
-
-2.  O que é JavaScript?
-
-`// JavaScript é uma linguagem de programação de alto nível, interpretada e orientada a objetos.`
-
-3.  História do JavaScript:
-
-`// Não há um código específico para a história do JavaScript, mas é interessante saber que o JavaScript foi desenvolvido por Brendan Eich em 1995.`
-
-4.  Compatibilidade do JavaScript:
-
-`// A compatibilidade do JavaScript varia entre os navegadores. Verifique a documentação do navegador para obter detalhes específicos.`
-
-5.  Ambiente de execução do JavaScript:
-
-`// O ambiente de execução do JavaScript pode ser um navegador da web, como o Google Chrome, ou um ambiente de execução de servidor, como o Node.js.`
-
-6.  Sintaxe do JavaScript:
-
-`// Exemplo de sintaxe básica: let nome = "John"; console.log("Olá, " + nome);`
-
-7.  Comentários em JavaScript:
-
-`// Este é um comentário de uma linha em JavaScript  /*    Este é um exemplo de    comentário de várias linhas em JavaScript */`
-
-8.  Variáveis em JavaScript:
-
-`let idade = 25; let altura = 1.75; let nome = "João";`
+```js
+let idade = 25;
+let altura = 1.75;
+let nome = "João";
+```
 
 9.  Tipos de dados em JavaScript:
 
 ```js
 let numero = 10; // número inteiro
-let decimal = 3.14;// número decimal
+let decimal = 3.14; // número decimal
 let texto = "Olá"; // string de texto
 let booleano = true; // valor booleano
 let array = [1, 2, 3]; // array
 let objeto = { nome: "João", idade: 25 }; // objeto
 ```
 
-Espero que isso ajude! Novamente, desculpe pela confusão anterior.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Continue, quero com toda a lista
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Claro! Aqui estão os exemplos continuando a partir do ponto anterior:
-
 10.  Números em JavaScript:
 
-`let numeroInteiro = 10; let numeroDecimal = 3.14; let resultado = numeroInteiro + numeroDecimal; console.log(resultado); // Saída: 13.14`
+```js
+let numeroInteiro = 10;
+let numeroDecimal = 3.14;
+let resultado = numeroInteiro + numeroDecimal;
+console.log(resultado); // Saída: 13.14
+```
 
 11.  Strings em JavaScript:
 
-`let nome = "João"; let sobrenome = "Silva"; let mensagem = "Olá, " + nome + " " + sobrenome + "!"; console.log(mensagem); // Saída: Olá, João Silva!`
+```js
+let nome = "João";
+let sobrenome = "Silva";
+let mensagem = "Olá, " + nome + " " + sobrenome + "!";
+console.log(mensagem); // Saída: Olá, João Silva!
+```
 
 12.  Booleanos em JavaScript:
 
-`let isTrue = true; let isFalse = false; console.log(isTrue); // Saída: true console.log(isFalse); // Saída: false`
+```js
+let isTrue = true;
+let isFalse = false;
+console.log(isTrue); // Saída: true
+console.log(isFalse); // Saída: false
+```
 
 13.  Objetos em JavaScript:
 
-`let pessoa = {   nome: "João",   idade: 25,   profissao: "Engenheiro" };  console.log(pessoa.nome); // Saída: João console.log(pessoa.idade); // Saída: 25 console.log(pessoa.profissao); // Saída: Engenheiro`
+```js
+let pessoa = {
+nome: "João",
+idade: 25,
+profissao: "Engenheiro"
+};
+console.log(pessoa.nome); // Saída: João
+console.log(pessoa.idade); // Saída: 25
+console.log(pessoa.profissao); // Saída: Engenheiro
+```
 
 14.  Arrays em JavaScript:
 
-`let numeros = [1, 2, 3, 4, 5]; console.log(numeros.length); // Saída: 5 console.log(numeros[0]); // Saída: 1 console.log(numeros[2]); // Saída: 3  let frutas = ["maçã", "banana", "laranja"]; frutas.push("morango"); console.log(frutas); // Saída: ["maçã", "banana", "laranja", "morango"]`
+```js
+let numeros = [1, 2, 3, 4, 5];
+console.log(numeros.length); // Saída: 5
+console.log(numeros[0]); // Saída: 1
+console.log(numeros[2]); // Saída: 3
+let frutas = ["maçã", "banana", "laranja"];
+frutas.push("morango");
+console.log(frutas); // Saída: ["maçã", "banana", "laranja", "morango"]
+```
 
 15.  Date objects em JavaScript:
 
@@ -220,17 +209,36 @@ let dataAtual = new Date(); console.log(dataAtual); // Saída: [data e horário 
 
 16.  Operadores em JavaScript:
 
-`// Operadores aritméticos let soma = 2 + 2; let subtracao = 5 - 3; let multiplicacao = 4 * 3; let divisao = 10 / 2; console.log(soma, subtracao, multiplicacao, divisao); // Saída: 4, 2, 12, 5  // Operadores relacionais let numero1 = 10; let numero2 = 5; console.log(numero1 > numero2); // Saída: true console.log(numero1 < numero2); // Saída: false  // Operadores lógicos let condicao1 = true; let condicao2 = false; console.log(condicao1 && condicao2); // Saída: false console.log(condicao1 || condicao2); // Saída: true  // Operadores de atribuição let x = 10; x += 5; // equivalente a x = x + 5 console.log(x); // Saída: 15  // Operadores de fluxo let idade = 25; let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade"; console.log(resultado); // Saída: Maior de idade`
+```js
+// Operadores aritméticos
+let soma = 2 + 2;
+let subtracao = 5 - 3;
+let multiplicacao = 4 * 3;
+let divisao = 10 / 2;
+console.log(soma, subtracao, multiplicacao, divisao); // Saída: 4, 2, 12, 5
 
-Espero que esses exemplos sejam úteis para entender cada tópico da lista!
+// Operadores relacionais
+let numero1 = 10;
+let numero2 = 5;
+console.log(numero1 > numero2); // Saída: true
+console.log(numero1 < numero2); // Saída: false
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Operadores lógicos
+let condicao1 = true;
+let condicao2 = false;
+console.log(condicao1 && condicao2); // Saída: false
+console.log(condicao1 || condicao2); // Saída: true
 
-Continue, tem mais tópicos
+// Operadores de atribuição
+let x = 10;
+x += 5; // equivalente a x = x + 5
+console.log(x); // Saída: 15
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Certamente! Aqui estão os exemplos continuando a partir do ponto anterior:
+// Operadores de fluxo
+let idade = 25;
+let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+console.log(resultado); // Saída: Maior de idade
+```
 
 17.  Controle de Fluxo:
 
