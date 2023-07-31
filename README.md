@@ -346,69 +346,248 @@ console.log(fatorial(5)); // Saída: 120
 
 19.  Objetos JavaScript:
 
-`// Objetos JavaScript let pessoa = {   nome: "João",   idade: 25,   profissao: "Engenheiro",   saudacao: function() {     console.log("Olá, eu sou o " + this.nome);   } };  console.log(pessoa.nome); // Saída: João console.log(pessoa.idade); // Saída: 25 console.log(pessoa.profissao); // Saída: Engenheiro pessoa.saudacao(); // Saída: Olá, eu sou o João`
+```js
+// Objetos JavaScript 
+let pessoa = {
+    nome: "João",   
+    idade: 25,   
+    profissao: "Engenheiro",   
+        saudacao: function() {     
+            console.log("Olá, eu sou o " + this.nome);   
+        } 
+    };  
+
+console.log(pessoa.nome); // Saída: João 
+console.log(pessoa.idade); // Saída: 25 
+console.log(pessoa.profissao); // Saída: Engenheiro 
+pessoa.saudacao(); // Saída: Olá, eu sou o João
+```
 
 20.  Arrays JavaScript:
 
-`// Arrays JavaScript let numeros = [1, 2, 3, 4, 5]; console.log(numeros.length); // Saída: 5 console.log(numeros[0]); // Saída: 1 console.log(numeros[2]); // Saída: 3  let frutas = ["maçã", "banana", "laranja"]; frutas.push("morango"); console.log(frutas); // Saída: ["maçã", "banana", "laranja", "morango"]`
+```js
+// Arrays JavaScript 
+let numeros = [1, 2, 3, 4, 5]; 
+console.log(numeros.length); // Saída: 5 
+console.log(numeros[0]); // Saída: 1 
+console.log(numeros[2]); // Saída: 3  
 
-Continue para a próxima resposta...
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Continue, do tópico anterior, até terminar a lista
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Claro! Aqui estão os exemplos continuando a partir do ponto anterior:
+let frutas = ["maçã", "banana", "laranja"]; 
+frutas.push("morango"); 
+console.log(frutas); // Saída: ["maçã", "banana", "laranja", "morango"]`
+```
 
 21.  Date objects JavaScript:
 
-`// Date objects JavaScript let dataAtual = new Date(); console.log(dataAtual); // Saída: [data e hora atual]`
+**i. Introdução ao Objeto Date:**
+   - O objeto `Date` é uma das principais ferramentas para trabalhar com datas em JavaScript.
+   - Para criar uma nova instância do objeto Date, usamos `new Date()`.
+
+**Exemplo básico:**
+```javascript
+const dataAtual = new Date();
+console.log(dataAtual);
+```
+
+**ii. Formatando datas:**
+   - Podemos formatar datas usando métodos do objeto Date e também aproveitando bibliotecas como `Intl.DateTimeFormat` para obter resultados localizados.
+
+**Exemplo de formatação:**
+```javascript
+const dataExemplo = new Date('2023-07-31');
+const formatoBrasileiro = new Intl.DateTimeFormat('pt-BR').format(dataExemplo);
+console.log(formatoBrasileiro);
+```
+
+**iii. Obtendo informações da data:**
+   - Podemos extrair informações específicas, como o dia, mês, ano, hora, etc., usando métodos do objeto Date.
+
+**Exemplo de obtenção de informações:**
+```javascript
+const dataExemplo = new Date('2023-07-31');
+const dia = dataExemplo.getDate();
+const mes = dataExemplo.getMonth() + 1; // Janeiro é representado por 0, então somamos 1.
+const ano = dataExemplo.getFullYear();
+console.log(`${dia}/${mes}/${ano}`);
+```
+
+**iv. Operações com datas:**
+   - Podemos realizar operações aritméticas com datas, como adicionar ou subtrair dias, meses e anos.
+
+**Exemplo de operações com datas:**
+```javascript
+const dataAtual = new Date();
+const dataFutura = new Date(dataAtual);
+dataFutura.setDate(dataFutura.getDate() + 7); // Adiciona 7 dias à data atual.
+console.log(`Data atual: ${dataAtual}`);
+console.log(`Data futura: ${dataFutura}`);
+```
+
+**v. Comparação de datas:**
+   - Podemos comparar duas datas para verificar se são iguais, ou qual delas é maior ou menor.
+
+**Exemplo de comparação de datas:**
+```javascript
+const data1 = new Date('2023-07-31');
+const data2 = new Date('2023-08-15');
+if (data1.getTime() === data2.getTime()) {
+  console.log('As datas são iguais.');
+} else if (data1.getTime() > data2.getTime()) {
+  console.log('A data1 é posterior à data2.');
+} else {
+  console.log('A data2 é posterior à data1.');
+}
+```
+
+**vi. Trabalhando com Timezones:**
+   - O objeto Date leva em consideração o fuso horário do sistema onde o código está sendo executado. Podemos ajustar as datas para diferentes fusos horários.
+
+**Exemplo de Timezones:**
+```javascript
+const dataUTC = new Date('2023-07-31T12:00:00Z'); // Data em UTC (Tempo Universal Coordenado).
+const dataLocal = new Date(dataUTC.getTime() - (dataUTC.getTimezoneOffset() * 60 * 1000)); // Conversão para o fuso horário local.
+console.log(`Data UTC: ${dataUTC}`);
+console.log(`Data Local: ${dataLocal}`);
+```
+
+**vii. Bibliotecas para manipulação de datas:**
+   - Além das funcionalidades nativas do objeto Date, existem várias bibliotecas de terceiros como Moment.js, date-fns, e Day.js que facilitam a manipulação de datas em JavaScript. Abordaremos o Moment.js nesta aula.
+
+**Exemplo com Moment.js:**
+```javascript
+const moment = require('moment');
+const dataExemplo = moment('2023-07-31');
+const dataFormatada = dataExemplo.format('DD/MM/YYYY');
+console.log(dataFormatada);
+```
+
+**Exemplo com date-fns:**
+```javascript
+const { format } = require('date-fns');
+const dataExemplo = new Date('2023-07-31');
+const dataFormatada = format(dataExemplo, 'dd/MM/yyyy');
+console.log(dataFormatada);
+```
 
 22.  Operadores aritméticos JavaScript:
 
-`// Operadores aritméticos JavaScript let soma = 2 + 2; let subtracao = 5 - 3; let multiplicacao = 4 * 3; let divisao = 10 / 2; console.log(soma, subtracao, multiplicacao, divisao); // Saída: 4, 2, 12, 5`
+```js
+// Operadores aritméticos JavaScript 
+let soma = 2 + 2; 
+let subtracao = 5 - 3; 
+let multiplicacao = 4 * 3; 
+let divisao = 10 / 2; 
+console.log(soma, subtracao, multiplicacao, divisao); // Saída: 4, 2, 12, 5
+```
 
 23.  Operadores relacionais JavaScript:
 
-`// Operadores relacionais JavaScript let numero1 = 10; let numero2 = 5; console.log(numero1 > numero2); // Saída: true console.log(numero1 < numero2); // Saída: false`
+```js
+// Operadores relacionais JavaScript 
+let numero1 = 10; 
+let numero2 = 5; 
+console.log(numero1 > numero2); // Saída: true 
+console.log(numero1 < numero2); // Saída: false
+```
 
 24.  Operadores lógicos JavaScript:
 
-`// Operadores lógicos JavaScript let condicao1 = true; let condicao2 = false; console.log(condicao1 && condicao2); // Saída: false console.log(condicao1 || condicao2); // Saída: true`
+```js
+// Operadores lógicos JavaScript 
+let condicao1 = true; 
+let condicao2 = false; 
+console.log(condicao1 && condicao2); // Saída: false 
+console.log(condicao1 || condicao2); // Saída: true`
+```
 
 25.  Operadores de atribuição JavaScript:
 
-`// Operadores de atribuição JavaScript let x = 10; x += 5; // equivalente a x = x + 5 console.log(x); // Saída: 15`
+```js
+// Operadores de atribuição JavaScript 
+let x = 10; 
+x += 5; // equivalente a x = x + 5 
+console.log(x); // Saída: 15
+```
 
 26.  Operadores de fluxo JavaScript:
 
-`// Operadores de fluxo JavaScript let idade = 25; let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade"; console.log(resultado); // Saída: Maior de idade`
+```js
+// Operadores de fluxo JavaScript 
+let idade = 25; 
+let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade"; 
+console.log(resultado); // Saída: Maior de idade
+```
 
 27.  Condicionais JavaScript:
 
-`// Condicionais JavaScript let idade = 20; if (idade >= 18) {   console.log("Maior de idade"); } else {   console.log("Menor de idade"); }`
+```js
+// Condicionais JavaScript 
+let idade = 20; if (idade >= 18) {
+    console.log("Maior de idade"); 
+} else {   
+    console.log("Menor de idade"); 
+}
+```
 
 28.  Laços JavaScript:
 
-`// Laços JavaScript let contador = 0; while (contador < 5) {   console.log("Contador: " + contador);   contador++; }  for (let i = 0; i < 5; i++) {   console.log("Iteração: " + i); }`
+```js
+// Laços JavaScript 
+let contador = 0; 
+while (contador < 5) {
+    console.log("Contador: " + contador); 
+    contador++; 
+}  
+         
+for (let i = 0; i < 5; i++) {
+    console.log("Iteração: " + i); 
+}
+```
 
 29.  Saltos JavaScript:
 
-`// Saltos JavaScript for (let i = 0; i < 5; i++) {   if (i === 3) {     continue; // Pula para a próxima iteração   }   if (i === 4) {     break; // Sai do loop   }   console.log("Iteração: " + i); }`
+```js
+// Saltos JavaScript
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue; // Pula para a próxima iteração   
+    }   
+    if (i === 4) {
+        break; // Sai do loop   
+    }   
+    console.log("Iteração: " + i); 
+}
+```
 
 30.  Loops de repetição while JavaScript:
 
-`// Loops de repetição while JavaScript let i = 0; while (i < 5) {   console.log("Iteração: " + i);   i++; }`
+```js
+// Loops de repetição while JavaScript 
+let i = 0; 
+while (i < 5) {
+    console.log("Iteração: " + i);   
+    i++;
+}
+```
 
 31.  Loops de repetição for JavaScript:
 
-`// Loops de repetição for JavaScript for (let i = 0; i < 5; i++) {   console.log("Iteração: " + i); }`
+```js
+// Loops de repetição for JavaScript 
+for (let i = 0; i < 5; i++) {
+    console.log("Iteração: " + i); 
+}
+```
 
 32.  Funções JavaScript:
 
-`// Funções JavaScript function saudacao(nome) {   console.log("Olá, " + nome); }  saudacao("João"); // Saída: Olá, João`
+```js
+// Funções JavaScript 
+function saudacao(nome) {
+    console.log("Olá, " + nome); 
+}  
+saudacao("João"); // Saída: Olá, João
+```
 
 33.  Parâmetros JavaScript:
 
@@ -635,7 +814,3 @@ Continue, do tópico anterior, até terminar a lista
 `<script src="https://cdnjs.cloudflare.com/ajax/libs/ember.js/3.27.1/ember.min.js"></script> <script>   // Exemplo de uso do Ember.js   var App = Ember.Application.create();   App.ApplicationController = Ember.Controller.extend({     message: "Hello, Ember!"   }); </script>`
 
 *   Next.js: um framework React para a construção de aplicativos web do lado do servidor (SSR) e renderização do lado do cliente. Ele simplifica o processo de desenvolvimento de aplicativos React com recursos
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-From ChatGPT, designed with FancyGPT
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
