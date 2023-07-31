@@ -708,9 +708,7 @@ for (let indice in numeros) {
 }
 ```
 
-42. Mét
-ChatGPT
-odos de arrays JavaScript:
+42. Métodos de arrays JavaScript:
 ```javascript
 // Métodos de arrays JavaScript
 let numeros = [1, 2, 3, 4, 5];
@@ -929,9 +927,7 @@ function meuHandler() {
   console.log("Botão clicado!");
 }
 
-let bot
-ChatGPT
-ao = document.getElementById("meuBotao");
+let botao = document.getElementById("meuBotao");
 botao.addEventListener("click", meuHandler);
 ```
 
@@ -1605,6 +1601,7 @@ atualizar();
 ```
 
 81. Bibliotecas JavaScript:
+
 Existem muitas bibliotecas JavaScript disponíveis para uso, cada uma com suas próprias funcionalidades e recursos. Aqui estão algumas bibliotecas populares:
 
 - jQuery: uma biblioteca JavaScript rápida, pequena e rica em recursos, que simplifica a manipulação do DOM, o tratamento de eventos, a animação e a comunicação com o servidor.
@@ -1646,6 +1643,7 @@ Existem muitas bibliotecas JavaScript disponíveis para uso, cada uma com suas p
 ```
 
 82. Frameworks JavaScript:
+
 Além das bibliotecas, existem também frameworks JavaScript abrangentes que fornecem uma estrutura completa para o desenvolvimento de aplicativos web. Alguns exemplos populares são:
 
 - Angular: um framework de desenvolvimento de aplicativos web baseado em TypeScript que oferece uma abordagem completa para o desenvolvimento de aplicativos complexos.
