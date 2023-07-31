@@ -242,11 +242,107 @@ console.log(resultado); // Saída: Maior de idade
 
 17.  Controle de Fluxo:
 
-`// Condicionais JavaScript let idade = 20; if (idade >= 18) {   console.log("Maior de idade"); } else {   console.log("Menor de idade"); }  // Laços JavaScript let contador = 0; while (contador < 5) {   console.log("Contador: " + contador);   contador++; }  for (let i = 0; i < 5; i++) {   console.log("Iteração: " + i); }  // Saltos JavaScript for (let i = 0; i < 5; i++) {   if (i === 3) {     continue; // Pula para a próxima iteração   }   if (i === 4) {     break; // Sai do loop   }   console.log("Iteração: " + i); }`
+```js
+// Condicionais JavaScript
+ let idade = 20; 
+ if (idade >= 18)  {  
+     console.log("Maior de idade"); 
+ } else {   
+    console.log("Menor de idade"); 
+}  
+
+```
+```js
+// Laços JavaScript 
+let contador = 0; 
+while (contador < 5) {
+    console.log("Contador: " + contador);
+    contador++; 
+}  
+```
+
+```js
+for (let i = 0; i < 5; i++) {
+    console.log("Iteração: " + i); 
+}  
+```
+
+```js
+// Saltos JavaScript 
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue; // Pula para a próxima iteração   
+    }   
+    if (i === 4) {
+        break; // Sai do loop   
+    }   
+    console.log("Iteração: " + i); 
+}
+```
 
 18.  Funções JavaScript:
 
-`// Funções function saudacao(nome) {   console.log("Olá, " + nome); }  saudacao("João"); // Saída: Olá, João  // Parâmetros JavaScript function soma(a, b) {   return a + b; }  let resultado = soma(3, 5); console.log(resultado); // Saída: 8  // Retorno de funções JavaScript function multiplica(a, b) {   return a * b; }  let produto = multiplica(2, 4); console.log(produto); // Saída: 8  // Funções anônimas JavaScript let saudacao = function(nome) {   console.log("Olá, " + nome); };  saudacao("João"); // Saída: Olá, João  // Funções de alta ordem JavaScript function executaOperacao(a, b, operacao) {   return operacao(a, b); }  function soma(a, b) {   return a + b; }  let resultado = executaOperacao(3, 4, soma); console.log(resultado); // Saída: 7  // Funções recursivas JavaScript function fatorial(n) {   if (n === 0) {     return 1;   }   return n * fatorial(n - 1); }  console.log(fatorial(5)); // Saída: 120`
+```js
+// Funções 
+function saudacao(nome) {
+    console.log("Olá, " + nome); 
+}  
+
+saudacao("João"); // Saída: Olá, João
+```
+```js
+// Parâmetros JavaScript 
+function soma(a, b) { 
+    return a + b; 
+}  
+
+let resultado = soma(3, 5); 
+console.log(resultado); // Saída: 8  
+```
+```js
+// Retorno de funções JavaScript
+function multiplica(a, b) {
+    return a * b; 
+} 
+
+let produto = multiplica(2, 4);
+console.log(produto); // Saída: 8  
+```
+
+```js
+// Funções anônimas JavaScript 
+let saudacao = function(nome) {
+    console.log("Olá, " + nome); 
+};  
+
+saudacao("João"); // Saída: Olá, João  
+
+```
+
+```js
+// Funções de alta ordem JavaScript
+function executaOperacao(a, b, operacao) {
+    return operacao(a, b); 
+} 
+
+function soma(a, b) {
+    return a + b; 
+}  
+
+let resultado = executaOperacao(3, 4, soma); 
+console.log(resultado); // Saída: 7  
+                                  
+```
+```js
+// Funções recursivas JavaScript 
+function fatorial(n) {   
+    if (n === 0) {    
+        return 1;   
+    }   
+    return n * fatorial(n - 1); 
+}  
+console.log(fatorial(5)); // Saída: 120
+```
 
 19.  Objetos JavaScript:
 
