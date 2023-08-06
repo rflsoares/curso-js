@@ -13,6 +13,7 @@ let nota3Trimestre = parseFloat(prompt("Qual foi sua nota do terceiro trimestre?
 
 //Calculo da média
 function calcularMedia(){
+    //Armazeno a fórmula do cálculo em uma variável media
     let media = ((nota1Trimestre + nota2Trimestre + nota3Trimestre)/3)
     
     //Retorna a média com duas casas decimais(toFixed(2))
