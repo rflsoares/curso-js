@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgba(96, 81, 169, 0.39);
+    height: 100vh;
+}
+h1{
+    color:rgb(3, 84, 3);
+    margin: 20px;
+    text-align: center;
+}
