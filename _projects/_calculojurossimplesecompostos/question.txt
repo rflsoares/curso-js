@@ -1,0 +1,16 @@
+crie um projeto para calculo de juros compostos
+formula: M = J + C 
+J = C (1 + t)^i
+Crie as variaveis c, t, i.
+Crie as variaveis para os calculos M e J 
+Exiba os valores com alert
+
+Exemplo: 
+let c = parseFloat(prompt("Insira o valor do capital"))
+let t = ?
+let i = ?
+
+let J = c * Math.pow((1 + t),i)
+let M = J + c
+
+alert("O montante é de " + M)

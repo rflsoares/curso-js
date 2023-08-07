@@ -1,0 +1,17 @@
+Sabendo que uma equação quadratica pode ser resolvida pela 
+fórmula de baskara monte um programa para cálculo dessas raízes
+
+Dicas: 
+Solução de x1 x = -b + raíz(delta) /2a
+Solução de x2 x = -b - raíz(delta) /2a
+Delta = b^2 -4ac
+Equação: ax^2 + bx + c = 0
+
+Crie as variáveis a, b, c
+Crie a variável delta
+Use um if para analisar o delta; se ele for negativo diga que não tem 
+raízes reais
+Crie a variável x1 com a fórmula completa
+Cire a variável x2 com a fórmula completa
+
+Crie um alert exibindo os resultados x1 e x2
