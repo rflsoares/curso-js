@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+                // Função de seta para resolver o sistema de equações
+
+                // Solicita os coeficientes ao usuário
+                const a = parseFloat(prompt("Digite o coeficiente 'a' da primeira equação:"));
+                const b = parseFloat(prompt("Digite o coeficiente 'b' da primeira equação:"));
+                const c = parseFloat(prompt("Digite o coeficiente 'c' da primeira equação:"));
+                const d = parseFloat(prompt("Digite o coeficiente 'd' da segunda equação:"));
+                const e = parseFloat(prompt("Digite o coeficiente 'e' da segunda equação:"));
+                const f = parseFloat(prompt("Digite o coeficiente 'f' da segunda equação:"));
+
+                // Calcula as soluções
+                const solveEquations = () => {
+                const y = (a * f - d * c) / (a * e - b * d);
+                const x = (c - b * y) / a;
+                }
+
+                // Exibe as soluções usando alert
+                alert(`Valor de x: ${x.toFixed(2)}\nValor de y: ${y.toFixed(2)}`);
+
+
+                // Chama a função para resolver o sistema de equações
+                solveEquations();
+    </script>
+    </body>
+</html>
