@@ -1,30 +1,57 @@
 /* Exercício 1:
-Declare duas variáveis usando let e atribua a elas dois números inteiros. Em seguida, exiba a soma das variáveis usando console.log.
+Declare duas variáveis usando let e atribua a elas dois números inteiros. 
+Em seguida, exiba a soma das variáveis usando console.log.
 */ 
 
-let number1 = 12
-let number2 = 20
+
+/*let number1 = 34
+let number2 = 35
 console.log(number1 + number2)
+*/
+
 
 /* Exercício 2:
 Declare uma variável constante com seu nome e exiba-a em um alerta usando alert.
-
 */ 
-let nema;
+
+
+/*const nome = "Rafael"
+alert(nome)
+*/
+
 
 /* Exercício 3:
 Peça ao usuário para inserir um número usando prompt, multiplique esse número por 5 e exiba o resultado usando console.log.
-
 */ 
+
+
+/*let number = prompt("Insira um número")
+let resultado = (number * 5)
+console.log(resultado)
+/*
+
 
 /* Exercício 4:
 Declare três variáveis usando let e atribua a elas as palavras "maçã", "banana" e "laranja". Concatene essas palavras em uma única string e exiba usando document.write.
+*/
 
-*/ 
+
+/*let fruta1 = "maçã"
+let fruta2 = "banana"
+let fruta3 = "laranja"
+let todasFrutas = fruta1 + ", " + fruta2 + ", " + fruta3
+document.write(todasFrutas)
+*/
+
+
 /* Exercício 5:
 Declare uma variável constante com um número qualquer. Peça ao usuário para inserir outro número usando prompt. Some os dois números e exiba o resultado em um alerta.
-
 */ 
+
+let number = 50
+let number2 = prompt("Insira outro número")
+let resultado = (number + number2)
+alert = resultado
 
 /* Exercício 6:
 Declare uma variável constante e atribua a ela o valor booleano true. Em seguida, solicite ao usuário que confirme a veracidade da variável e exiba o resultado usando console.log.
