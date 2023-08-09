@@ -1,0 +1,147 @@
+Exercício 1:
+
+let num1 = 5;
+let num2 = 8;
+let sum = num1 + num2;
+console.log("A soma é: " + sum);
+
+Exercício 2:
+const meuNome = "Seu Nome";
+alert(meuNome);
+
+Exercício 3:
+let numero = prompt("Digite um número:");
+let resultado = numero * 5;
+console.log("O resultado é: " + resultado);
+
+Exercício 4:
+let fruta1 = "maçã";
+let fruta2 = "banana";
+let fruta3 = "laranja";
+let todasFrutas = fruta1 + ", " + fruta2 + ", " + fruta3;
+document.write(todasFrutas);
+
+Exercício 5:
+const numero1 = 10;
+let numero2 = prompt("Digite outro número:");
+let soma = numero1 + parseInt(numero2);
+alert("A soma é: " + soma);
+
+Exercício 6:
+const verdadeiro = true;
+let confirmacao = confirm("Isso é verdadeiro?");
+console.log("A confirmação é: " + confirmacao);
+
+Exercício 7:
+let nomeUsuario = prompt("Qual é o seu nome?");
+document.write("Olá, " + nomeUsuario + "!");
+
+Exercício 8:
+let num1 = 15;
+let num2 = 8;
+console.log(num1 + " > " + num2 + ": " + (num1 > num2));
+console.log(num1 + " < " + num2 + ": " + (num1 < num2));
+console.log(num1 + " >= " + num2 + ": " + (num1 >= num2));
+console.log(num1 + " <= " + num2 + ": " + (num1 <= num2));
+
+Exercício 9:
+let numero = prompt("Digite um número:");
+if (numero % 2 === 0) {
+    alert("O número é par.");
+} else {
+    alert("O número é ímpar.");
+}
+
+Exercício 10:
+const pi = 3.14159;
+let raio = prompt("Digite o raio do círculo:");
+let area = pi * raio * raio;
+console.log("A área do círculo é: " + area);
+
+Exercício 11:
+let gostaDeChocolate = confirm("Você gosta de chocolate?");
+alert("Resposta: " + gostaDeChocolate);
+
+Exercício 12:
+let num1 = 5;
+let num2 = 8;
+let num3 = 12;
+let media = (num1 + num2 + num3) / 3;
+console.log("A média é: " + media);
+
+Exercício 13:
+let anoNascimento = prompt("Digite o ano do seu nascimento:");
+let anoAtual = new Date().getFullYear();
+let idade = anoAtual - parseInt(anoNascimento);
+alert("Você tem " + idade + " anos.");
+
+Exercício 14:
+const frase = "Esta é uma frase de exemplo.";
+let palavra = prompt("Digite uma palavra:");
+if (frase.includes(palavra)) {
+    alert("A palavra está contida na frase.");
+} else {
+    alert("A palavra não está contida na frase.");
+}
+
+Exercício 15:
+let idade = prompt("Quantos anos você tem?");
+if (idade >= 18) {
+    alert("Você é maior de idade.");
+} else {
+    alert("Você é menor de idade.");
+}
+
+Exercício 16:
+const temperaturaCelsius = 25;
+let temperaturaFahrenheit = (temperaturaCelsius * 9/5) + 32;
+console.log(temperaturaCelsius + "°C é igual a " + temperaturaFahrenheit + "°F.");
+
+Exercício 17:
+let numero = prompt("Digite um número:");
+if (numero > 0) {
+    alert("O número é positivo.");
+} else if (numero < 0) {
+    alert("O número é negativo.");
+} else {
+    alert("O número é zero.");
+}
+
+Exercício 18:
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+let operacao = prompt("Escolha a operação (+, -, *, /):");
+
+let resultado;
+if (operacao === "+") {
+    resultado = num1 + num2;
+} else if (operacao === "-") {
+    resultado = num1 - num2;
+} else if (operacao === "*") {
+    resultado = num1 * num2;
+} else if (operacao === "/") {
+    resultado = num1 / num2;
+} else {
+    alert("Operação inválida.");
+}
+
+alert("O resultado é: " + resultado);
+
+Exercício 19:
+const cor1 = "azul";
+const cor2 = "verde";
+const cor3 = "amarelo";
+let corEscolhida = prompt("Escolha uma cor:").toLowerCase();
+if (corEscolhida === cor1 || corEscolhida === cor2 || corEscolhida === cor3) {
+    alert("Essa cor está disponível.");
+} else {
+    alert("Essa cor não está disponível.");
+}
+
+Exercício 20:
+let querJogar = confirm("Você quer jogar um jogo?");
+if (querJogar) {
+    alert("Bem-vindo ao jogo!");
+} else {
+    alert("Até a próxima!");
+}
