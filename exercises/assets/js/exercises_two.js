@@ -3,6 +3,7 @@
 Escreva um programa que verifica se um número é positivo, negativo ou zero e exibe o resultado.
 
 */ 
+let xx;
 
 /**Exercício 2:**
 Crie um loop `for` que imprima os números de 1 a 10 no console.
@@ -75,7 +76,6 @@ Escreva uma função que converta uma temperatura de Celsius para Fahrenheit.
 
 /**Exercício 16:**
 Crie um programa que peça ao usuário para adivinhar um número entre 1 e 100. Informe se o palpite está acima, abaixo ou correto.
-
 */ 
 
 /**Exercício 17:**
@@ -95,3 +95,4 @@ Escreva uma função que calcule o valor da série de Fibonacci para um dado nú
 
 /**Exercício 20:**
 Crie um programa que calcule e exiba os números primos entre 1 e 50.
+*/
